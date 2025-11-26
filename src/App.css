@@ -1,0 +1,136 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+}
+
+.modal {
+  width: 370px;
+  height: 326px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  border: 1px solid #EEEEEE;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0px 8px 15px 0px rgba(20, 20, 20, 0.12), 0px 0px 4px 0px rgba(20, 20, 20, 0.10);
+  display: flex;
+  flex-direction: column;
+}
+
+.all-pages-section {
+  /* Container for "All pages" item */
+}
+
+.pages-section {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.pages-section::-webkit-scrollbar {
+  display: none;
+}
+
+.divider {
+  height: 20px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.divider-line {
+  width: 340px;
+  height: 0px;
+  border: none;
+  border-top: 0.7px solid #CDCDCD;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 42px;
+  padding: 8px 15px 8px 22px;
+  cursor: pointer;
+}
+
+.label {
+  flex: 1;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  color: #000000;
+  user-select: none;
+  cursor: pointer;
+}
+
+.checkbox-wrapper {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.checkbox-svg {
+  width: auto;
+  height: auto;
+  max-width: 31px;
+  max-height: 31px;
+  display: block;
+}
+
+.checkbox-default {
+  width: 23px;
+  height: 23px;
+  border-radius: 6px;
+  border: 1px solid #E3E3E3;
+  background: transparent;
+}
+
+.done-section {
+  width: 370px;
+  height: 60px;
+  padding: 10px 15px;
+}
+
+.done-button {
+  width: 340px;
+  height: 40px;
+  background: #FFCE22;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.done-button:hover {
+  background: #FFD84D;
+}
+
+.done-button:active {
+  background: #FFD84D;
+  animation: bounce 0.3s ease;
+}
+
+@keyframes bounce {
+  0% {
+    background: #FFD84D;
+  }
+
+  100% {
+    background: #FFCE22;
+  }
+}
